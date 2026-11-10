@@ -1,0 +1,26 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!backend/.env.example
+backend/.env
+
+# Python environments and generated caches
+.venv/
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Next.js generated files
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+
+# Local editor / OS files
+.DS_Store
+Thumbs.db
+*.log

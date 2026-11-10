@@ -1,0 +1,94 @@
+{
+  "model_metadata": {
+    "algorithm": "RandomForestClassifier",
+    "scikit_learn_version": "1.8.0",
+    "numpy_version": "2.3.5",
+    "pandas_version": "2.2.3",
+    "joblib_version": "1.5.3",
+    "random_state": 42,
+    "training_rows": 22500,
+    "holdout_rows": 7500,
+    "dataset_sha256": "a8d3a9efb0a47885e704e631888e4cd92cff3e6435bb890a8cd97ec13e892a16"
+  },
+  "roc_auc": 0.6267559674125475,
+  "average_precision": 0.03195347537428114,
+  "baseline_roc_auc": 0.5,
+  "baseline_average_precision": 0.020666666666666667,
+  "classification_report": {
+    "0": {
+      "precision": 0.9824480369515012,
+      "recall": 0.8687542545949626,
+      "f1-score": 0.9221098265895954,
+      "support": 7345.0
+    },
+    "1": {
+      "precision": 0.04079601990049751,
+      "recall": 0.2645161290322581,
+      "f1-score": 0.0706896551724138,
+      "support": 155.0
+    },
+    "accuracy": 0.8562666666666666,
+    "macro avg": {
+      "precision": 0.5116220284259994,
+      "recall": 0.5666351918136103,
+      "f1-score": 0.4963997408810046,
+      "support": 7500.0
+    },
+    "weighted avg": {
+      "precision": 0.9629872285991138,
+      "recall": 0.8562666666666666,
+      "f1-score": 0.9045138097136403,
+      "support": 7500.0
+    }
+  },
+  "threshold": 0.12669969788354837,
+  "threshold_metrics": {
+    "precision": 0.04079601990049751,
+    "recall": 0.2645161290322581,
+    "f1": 0.0706896551724138,
+    "predicted_positive_rate_pct": 13.4
+  },
+  "note": "Threshold selected to maximise holdout F1. Synthetic data only; metrics are not evidence of real-world fraud performance. Scores are not calibrated probabilities.",
+  "top_feature_importances": [
+    [
+      "num__amount",
+      0.22816242744548312
+    ],
+    [
+      "num__device_age_days",
+      0.21769038048405037
+    ],
+    [
+      "num__customer_tenure_days",
+      0.21590196405069087
+    ],
+    [
+      "num__hour_of_day",
+      0.19871624884486644
+    ],
+    [
+      "num__failed_attempts_24h",
+      0.0329900367439239
+    ],
+    [
+      "cat__transaction_type_transfer",
+      0.015311569663814566
+    ],
+    [
+      "cat__transaction_type_cash_out",
+      0.014453700287825399
+    ],
+    [
+      "cat__channel_USSD",
+      0.014279969850697124
+    ],
+    [
+      "cat__transaction_type_cash_in",
+      0.013827891025249926
+    ],
+    [
+      "cat__channel_APP",
+      0.013435482450764343
+    ]
+  ]
+}
